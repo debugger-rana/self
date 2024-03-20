@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+System.out.println("Enter a natural number:");
+int n=sc.nextInt();
+int fact=n;
+for(int i=1;i<n;i++){
+    fact=fact*(n-i);
+}
+System.out.println(fact);
+sc.close();
+    }
+}
